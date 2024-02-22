@@ -1125,5 +1125,8 @@ a {
     .item a img{
         height: 100%;
     }
+     .about-section-two .ServiceIcoBack{
+        margin-top: 25px;
+    }
     }
     
