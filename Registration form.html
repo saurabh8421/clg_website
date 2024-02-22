@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <label for="logo"
+                style="position: absolute;left: 10px;color: red;font-weight: bolder;font-size: 30px;top: -5px;">logo</label>
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="Login.html">Login</a>
+            </li>
+        </ul>
+    </nav>
+    <center>
+        <div class="container">
+            <form action="">
+                <fieldset>
+                    <legend class="heading">Registration Form:</legend>
+                    <fieldset>
+                        <legend>Personal Details:</legend>
+                        <table style="width: 100%;">
+                            <tr>
+                                <td>
+
+                                    <label for="fname">First Name:</label>
+                                    <input type="text" id="fname" name="first_name" class="dt" required
+                                        placeholder="Enter First Name">
+                                </td>
+                                <td>
+
+                                    <label for="lname">Last Name:</label>
+                                    <input type="text" id="lname" name="last_name" class="dt" required
+                                        placeholder="Enter Last Name">
+                                </td>
+                            </tr>
+                        </table>
+                        <table style="width: 100%;">
+                            <td>
+                                <label for="Dob"> Enter your DOB:</label>
+                                <input type="date" class="dt">
+                            </td>
+                            <td>
+                                <label for="gender">Gender:</label><br>
+                                <input type="radio" id="male" name="gender" value="Male" checked> Male
+                                <input type="radio" id="female" name="gender" value="Female"> Female<br><br>
+                            </td>
+                        </table>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Contact Details:</legend>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="Mob">Mobile No.:</label>
+                                    <input type="number" class="dt">
+                                </td>
+                                <td>
+                                    <label for="email">Email:</label><br>
+                                    <input type="email" id="email" name="email" class="dt" required
+                                        placeholder="Enter Your Email ID">
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Address:</legend>
+                        <fieldset>
+                            <legend>Current Address:</legend>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <label for="add">Address Line 1:</label><br>
+                                        <input type="text" id="add11" name="address1" class="dt" required
+                                            placeholder="House/Building no., Street etc.">
+                                    </td>
+                                    <td>
+                                        <label for="add">Address Line 2: (optional)</label><br>
+                                        <input type="text" id="add12" name="address2" class="dt"
+                                            placeholder="Area, Landmark, Nearby Bus Stop etc.">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+
+                                        <label for="district">District:</label>
+                                        <input type="text" id="district1" placeholder="City / Town " class="dt">
+                                    </td>
+                                    <td>
+
+                                        <label for="pincode1">Pin Code:</label><br>
+                                        <input type="number" minlength="6" maxlength="6" id="PinCode1"
+                                            placeholder="Enter Pin code" class="dt">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="State1"></label>
+                                        <label for="inputState">State</label>
+                                        <select class="form-control" id="inputState1">
+                                            <option value="SelectState">Select State</option>
+                                            <option value="Andra Pradesh">Andra Pradesh</option>
+                                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                            <option value="Assam">Assam</option>
+                                            <option value="Bihar">Bihar</option>
+                                            <option value="Chhattisgarh">Chhattisgarh</option>
+                                            <option value="Goa">Goa</option>
+                                            <option value="Gujarat">Gujarat</option>
+                                            <option value="Haryana">Haryana</option>
+                                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                            <option value="Jharkhand">Jharkhand</option>
+                                            <option value="Karnataka">Karnataka</option>
+                                            <option value="Kerala">Kerala</option>
+                                            <option value="Madya Pradesh">Madya Pradesh</option>
+                                            <option value="Maharashtra">Maharashtra</option>
+                                            <option value="Manipur">Manipur</option>
+                                            <option value="Meghalaya">Meghalaya</option>
+                                            <option value="Mizoram">Mizoram</option>
+                                            <option value="Nagaland">Nagaland</option>
+                                            <option value="Orissa">Orissa</option>
+                                            <option value="Punjab">Punjab</option>
+                                            <option value="Rajasthan">Rajasthan</option>
+                                            <option value="Sikkim">Sikkim</option>
+                                            <option value="Tamil Nadu">Tamil Nadu</option>
+                                            <option value="Telangana">Telangana</option>
+                                            <option value="Tripura">Tripura</option>
+                                            <option value="Uttaranchal">Uttaranchal</option>
+                                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                            <option value="West Bengal">West Bengal</option>
+                                            <option disabled style="background-color:#aaa; color:#fff">UNION Territories
+                                            </option>
+                                            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands
+                                            </option>
+                                            <option value="Chandigarh">Chandigarh</option>
+                                            <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                                            <option value="Daman and Diu">Daman and Diu</option>
+                                            <option value="Delhi">Delhi</option>
+                                            <option value="Lakshadeep">Lakshadeep</option>
+                                            <option value="Pondicherry">Pondicherry</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                        <br>
+                        <input type="checkbox" id="check" onclick="myFunction()">Permanent address is same as Current
+                        Address
+                        <br>
+                        <fieldset>
+                            <legend>Permanent Address:</legend>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <label for="add21">Address Line 1:</label><br>
+                                        <input type="text" id="add21" name="address1" class="dt" required
+                                            placeholder="House/Building no., Street etc.">
+                                    </td>
+                                    <td>
+                                        <label for="add22">Address Line 2: (optional)</label><br>
+                                        <input type="text" id="add22" name="address2" class="dt"
+                                            placeholder="Area, Landmark, Nearby Bus Stop etc.">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+
+                                        <label for="district">District:</label>
+                                        <input type="text" id="district2" placeholder="City / Town " class="dt">
+                                    </td>
+                                    <td>
+
+                                        <label for="pincode">Pin Code:</label><br>
+                                        <input type="number" minlength="6" maxlength="6" id="PinCode2"
+                                            placeholder="Enter Pin code" class="dt">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="State"></label>
+                                        <label for="inputState">State</label>
+                                        <select class="form-control" id="inputState2">
+                                            <option value="SelectState">Select State</option>
+                                            <option value="Andra Pradesh">Andhra Pradesh</option>
+                                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                            <option value="Assam">Assam</option>
+                                            <option value="Bihar">Bihar</option>
+                                            <option value="Chhattisgarh">Chhattisgarh</option>
+                                            <option value="Goa">Goa</option>
+                                            <option value="Gujarat">Gujarat</option>
+                                            <option value="Haryana">Haryana</option>
+                                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                            <option value="Jharkhand">Jharkhand</option>
+                                            <option value="Karnataka">Karnataka</option>
+                                            <option value="Kerala">Kerala</option>
+                                            <option value="Madya Pradesh">Madya Pradesh</option>
+                                            <option value="Maharashtra">Maharashtra</option>
+                                            <option value="Manipur">Manipur</option>
+                                            <option value="Meghalaya">Meghalaya</option>
+                                            <option value="Mizoram">Mizoram</option>
+                                            <option value="Nagaland">Nagaland</option>
+                                            <option value="Orissa">Orissa</option>
+                                            <option value="Punjab">Punjab</option>
+                                            <option value="Rajasthan">Rajasthan</option>
+                                            <option value="Sikkim">Sikkim</option>
+                                            <option value="Tamil Nadu">Tamil Nadu</option>
+                                            <option value="Telangana">Telangana</option>
+                                            <option value="Tripura">Tripura</option>
+                                            <option value="Uttaranchal">Uttaranchal</option>
+                                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                            <option value="West Bengal">West Bengal</option>
+                                            <option disabled style="background-color:#aaa; color:#fff">UNION Territories
+                                            </option>
+                                            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands
+                                            </option>
+                                            <option value="Chandigarh">Chandigarh</option>
+                                            <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                                            <option value="Daman and Diu">Daman and Diu</option>
+                                            <option value="Delhi">Delhi</option>
+                                            <option value="Lakshadeep">Lakshadeep</option>
+                                            <option value="Pondicherry">Pondicherry</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </fieldset>
+
+                    <br>
+                    <fieldset>
+                        <legend>Upload Documents:</legend>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="photo">Photo:</label>
+                                    <input type="file" id="Photo" placeholder="Upload you image" name="image"
+                                        class="dt">
+                                </td>
+                                <td>
+                                    <label for="photo">Signature:</label>
+                                    <input type="file" id="Signature" placeholder="Upload you image" name="signature"
+                                        class="dt">
+                                </td>
+                            </tr>
+                            <td>
+                                <label for="addressproof">Address Proof (Aadhar/Voter ID):</label>
+                                <input type="file" id="addressproof" placeholder="Upload your address proof"
+                                    name="address_proof" class="dt">
+                            </td>
+
+                        </table>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Login Details</legend>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="username">Username:</label>
+                                    <input type="text" id="username" name="username" placeholder="Please set a username"
+                                        class="dt">
+                                </td>
+                                <td>
+                                    <label for="pwd">Password:</label><br>
+                                    <input type="password" id="pwd" name="pass1" class="dt" required
+                                        placeholder="Enter Password">
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <br>
+                    <br>
+                    <input type="checkbox"> I hereby declare that the information
+                    given above and in the
+                    enclosed
+                    documents is true to the best of my knowledge and belief and nothing has been concealed therein.
+                    <br><br>
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="reset" class="submit" style="background-color: green;">
+                            </td>
+                            <td>
+                                <button type="submit" class="submit" id="submit"
+                                    onclick="myFunction2()  ">Submit</button>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+
+    </center>
+
+    <script>
+        function myFunction() {
+            let x = document.getElementById("add11").value;
+            document.getElementById("add21").value = x;
+            let v = document.getElementById("add12").value;
+            document.getElementById("add22").value = v;
+            let y = document.getElementById("district1").value;
+            document.getElementById("district2").value = y;
+            let z = document.getElementById("PinCode1").value;
+            document.getElementById("PinCode2").value = z;
+            let w = document.getElementById("inputState1").value;
+            document.getElementById("inputState2").value = w;
+
+        }
+        function myFunction2() {
+            alert("Your registration form is submitted succesfully")
+
+        }
+        const iChars = "!@#$%^&*()+=-[]\\\';,./{}|\":<>?";
+
+        function checkname() {
+            let text2 = document.getElementById("fname").value;
+            // for (let i = 0; i < iChars.length; i++) {
+            //     for (let j = 0; j < text2.length; j++) {
+            //         if (iChars[i] == text2[j]) {
+            //          alert("enter valid name")
+
+            //         }
+            //     }
+            // }
+            // alert(text2)
+        }
+        checkname();
+    </script>
+</body>
+
+
+</html>
