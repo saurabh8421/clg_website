@@ -1133,6 +1133,8 @@ a {
     .carousel-item{
         height: 250px;
     }
+        .facility img{
+        margin-left: -10px;
     }
     }
     
